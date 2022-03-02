@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weak map and weak set</title>
+</head>
+<body>
+    <script>
+        //creating a map 
+        let weakMap= new WeakMap();
+        console.log(weakMap);
+
+        //in map the key must be an object 
+
+        let john ={name:'john'};
+        weakMap.set(john,'john profile');
+        console.log(weakMap.get(john));
+        console.log(weakMap);
+        john=null; // deleting 
+        console.log(john);
+
+        //set methods 
+
+        let weakSet=new WeakSet();
+        console.log(weakSet);
+        let wohn={name:'john'};
+        let peter={name:'peter'};
+        weakSet.add(wohn).add(peter);
+        console.log(weakSet);
+        console.log(weakSet.has(wohn));
+
+        //objects keys -values- enteries 
+
+        let user={
+            firstName:'skillsafari',
+            lastName:'edukeys',
+            age:30,
+            desg:'full stack',
+            phone:9391,
+            email:'skillsafari@gmail.com',
+        };
+
+
+
+    </script>
+</body>
+</html>
