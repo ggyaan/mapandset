@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map and set</title>
+</head>
+<body>
+    <script>
+        /**  //creating a map
+        let map= new Map();
+        console.log(map);
+        //adding properties
+        //syntax : map.set(key,value);;
+        map.set('skill','safari');
+        console.log(map);
+        map.set('hey','hello');
+        console.log(map);
+
+        // getting the map value
+       //syntax:map.get(key);
+
+       console.log(map.get('skill')); // safari
+       console.log(map.get('hey')); //hello
+
+       //checking the exsistance of the property 
+       // map.has();
+
+       console.log(map.has('skill'));
+       console.log(map.has('kill'));
+
+       //deleting the map property 
+       // map.delete(key);
+       console.log(map);    
+      // map.delete('skill');
+       console.log(map);
+
+       // clearing the map property
+       //map.clear();
+       map.clear();
+       console.log(map);//deletes entire property
+
+       // using object data type 
+        
+        let john={name:'john'};
+        let dap=new Map();
+        dap.set(john,123);
+        console.log(dap);
+        console.log(dap.get(john));
+        //adding more properties 
+        dap.set(1,'hey').set(2,'heyy').set(3,'heyyy');
+        console.log(dap);
+        
+
+        **/
+        // Iteration over Map
+
+        //3 methods
+        // map.key()
+        //map.values()
+        //map.entries()
+
+        let subjectMap= new Map([
+            ['subjone','eng'],
+            ['subjtwo','math'],
+            ['subjthree','soc'],
+        ]);
+        console.log(subjectMap);
+
+        //keys()
+        console.log(subjectMap.keys());
+            for(let key of subjectMap.keys()){
+               console.log(key);
+            }
+
+
+      //values()
+
+      console.log(subjectMap.values());
+         for (let values of subjectMap.values()){
+             console.log(values);
+         }
+
+
+    // entries()
+
+    console.log(subjectMap.entries());
+    for(let [key,value] of subjectMap.entries()){
+        console.log(`key:${key} values:${value}`);
+    }
+
+
+   /**  //foreach()
+
+    subjectMap.forEach(value,key,map) => {
+        console.log(`key:${key} values:${value}`);
+    }
+        
+   **/
+
+
+   
+
+
+
+       
+
+    </script>
+</body>
+</html>
