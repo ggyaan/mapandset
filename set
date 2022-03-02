@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set</title>
+</head>
+<body>
+    <script>
+        //creating of new set 
+        let set=new Set(['edukeys',1,2,3]);
+        console.log(set);
+
+        //adding a property 
+        set.add('skillsafari');
+        console.log(set);
+
+        // deleteing the value
+        set.delete(2);
+        console.log(set);
+
+        //checking the value
+        console.log(set.has('edukeys'));
+
+        // clearing the value
+       /** set.clear();
+        console.log(set);
+        **/
+
+        //methods 
+        // set.keys()
+        //set.values()
+        //set.entires()
+
+        //set.keys()
+
+        for(let key of set.keys()){
+            console.log(key);
+        }
+
+        //set.values()
+
+        for(let value of set.values()){
+            console.log(value);
+        }
+
+        //since values and keys both are different............
+
+        //set.entries()
+
+        for(let [key,value] of set.entries()){
+            console.log(key,value);
+        }
+
+        //forEach()
+
+        set.forEach((value,valueAgain,set) => {
+            console.log(`value:${value}`);
+            })
+
+    </script>
+</body>
+</html>
